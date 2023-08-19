@@ -1,0 +1,177 @@
+/* ApplicationForm.css */
+.image-load{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #7a9449;
+  height: 17vh;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+.doc-load{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 167px;
+  width: 100%;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 50px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  margin-top: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+} 
+
+.form{
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 60px;
+   box-shadow: rgba(28, 28, 28, 0.2) 0px 2px 3px;
+   margin: 75px 0px 75px 0px;
+   width: 100%;
+
+  
+}
+h1{
+  color: #7a9449;
+}
+hr{
+  width: 100%;
+  color: grey;
+}
+input[type=text]:focus {
+  outline: none;
+}
+.name-div{
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0px 15px 0px;
+    /* height: 50px; */
+    align-items: center;
+}
+.name{
+  height: fit-content;
+  /* border: 1px solid black; */
+  /* width: 50%; */
+}
+.name-label{
+  color: #2C3345;
+  font-size: large;
+  font-weight: 500;
+}
+
+.firstname{
+  height: 4vh;
+  margin: 3px;
+    border-radius: 3px;
+    border: 1px solid #dee2e6;
+    outline: none;
+
+}
+
+.course-div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 15px 0px 15px 0px;
+  flex-direction: column;
+}
+
+.course-option{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  
+}
+.course{
+  color: #2C3345;
+  display: flex;
+}
+.usercourse{
+ margin-bottom: 10px;
+ font-size: large;
+ color: #2C3345;
+ display: flex;
+ font-weight: 500;
+}
+
+.course-span{
+  width: 200px;
+    display: flex;
+    margin-left: 5px;
+}
+
+.education{
+  text-align: left;
+  color: #2C3345;
+}
+
+.mail-input{
+  width: 200px;
+  height: 4vh;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+}
+
+.address-input{
+  height: 3vh;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+}
+.address-1{
+  text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.inr-address{
+  display: flex;
+  flex-flow: column;
+}
+.Captcha{
+
+}
+.inr-captcha > iframe{
+ width:250px;
+}
+
+
+
+/* Media Queries for responsive layout */
+
+/* Mobile view */
+@media (max-width: 767px) {
+  form {
+    max-width: 90%;
+  }
+  .name-div{
+    margin: 15px 0px 40px 0px;
+  }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+  form {
+    max-width: 80%;
+  }
+}
+
+/* PC view */
+@media (min-width: 992px) {
+  form {
+    max-width: 60%;
+  }
+}
